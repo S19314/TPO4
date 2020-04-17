@@ -26,7 +26,7 @@ public class Main {
     
     Server s = new Server(host, port);
     s.startServer();
-    
+
     // start clients
     clRequests.forEach( (id, reqList) -> {
       Client c = new Client(host, port, id);
